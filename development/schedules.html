@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko/Nowy plan</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<header class="app-header">
+    <h1 class="app-title"><a href="index.html">Zaplanuj <span>Jedzonko</span></a></h1>
+    <div class="app-login">
+        <span class="user-name">Imię</span>
+        <i class="fas fa-user-circle fa-3x"></i>
+    </div>
+</header>
+<section class="app-main">
+    <nav class="app-nav">
+        <ul class="app-links">
+            <li><a href="app.html">Pulpit</a></li>
+            <li><a href="recipes.html">Przepisy</a></li>
+            <li class="schedules-new-plan-form"><a href="schedules.html?sos=ostry">Plany</a></li>
+        </ul>
+    </nav>
+    <main class="app-main-window">
+        <div class="succes-widget d-none">
+            <i class="fas fa-check-circle fa-3x"></i>
+            <p>Plan dodany, super! </p>
+            <i class="fas fa-times-circle fa-2x success-widget-close"></i>
+        </div>
+        <div class="succes-widget-edit d-none">
+            <i class="fas fa-times-circle fa-2x edit-widget-close"></i>
+            <i class="fas fa-check-circle fa-3x"></i>
+            <p>Plan zapisany!</p>
+            
+        </div>
+        <div class="remove-widget d-none">
+            <i class="fas fa-exclamation-circle fa-3x"></i>
+            <p>Czy na pewno usunąć plan?</p>
+            <div class="removeIcons">
+                <i class="fas fa-check-circle fa-2x remove-widget-yes"></i>
+                <i class="fas fa-times-circle fa-2x remove-widget-no"></i>
+            </div>
+            
+            
+        </div>
+        <section class="plan-list">
+            <div class="newPlan-title">
+                <h3>LISTA PLANÓW</h3>
+                <button class="plan-list-button">+</button>
+                <!-- <a href="app.html" class="newPlan-button">Zapisz i zamknij</a> -->
+            </div>
+            <hr>
+            <table>
+                <tr>
+                    <th class="table-column">id</th>
+                    <th class="table-column">nazwa</th>
+                    <th class="table-column">opis</th>
+                    <th class="table-column">tydzień</th>
+                    <th class="table-column">akcje</th>
+                </tr>
+            </table>
+            <div class="div-plan-table">
+                <table class="plan-table">
+
+                </table>
+            </div>
+        </section>
+        <section class="newPlan d-none">
+            <section>
+                <div class="newPlan-title">
+                    <h3>NOWY PLAN</h3>
+                    <button class="newPlan-button">Zapisz i zamknij</button>
+                    <!-- <a href="app.html" class="newPlan-button">Zapisz i zamknij</a> -->
+                </div>
+                <hr>
+                
+            </section>
+            <section class="newPlan-data">
+                <div>
+                    <div class="newPLan-data-item newPLan-data-item1">
+                        <h3>Nazwa planu</h3>
+                        <input id="planName" name="nazwa planu" type="text" maxlength="50"
+                            placeholder="Max 50 characters">
+                    </div>
+                    <div class="newPLan-data-item newPLan-data-item2">
+                        <h3>Opis planu</h3>
+                        <textarea id="planDescription" name="opis planu" type="text" rows="4" maxlength="360"
+                            placeholder="Max 360 characters"></textarea>
+                    </div>
+                    <div class="newPLan-data-item newPLan-data-item3">
+                        <h3>Numer tygodnia</h3>
+                        <input id="weeks" name="numer tygodnia" type="number">
+                    </div>
+                </div>
+            </section>
+            <section class="newPlan-table">
+                <table>
+                    <tr>
+                        <th class="table-column"></th>
+                        <th class="table-column">Śniadanie</th>
+                        <th class="table-column">Drugie śniadanie</th>
+                        <th class="table-column">Zupa</th>
+                        <th class="table-column">Drugie<br>danie</th>
+                        <th class="table-column">Kolacja</th>
+                    </tr>
+                    <tr>
+                        <th class="table-row">Poniedziałek</th>
+                        <td>
+                            <select class="monday" name="1-monday-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+
+                            </select>
+                        </td>
+                        <td>
+                            <select class="monday" name="1-monday-second-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="monday" name="1-monday-soup">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="monday" name="1-monday-dinner">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="monday" name="1-monday-supper">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th class="table-row">Wtorek</th>
+                        <td>
+                            <select class="tuesday" name="2-tuesday-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="tuesday" name="2-tuesday-second-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="tuesday" name="2-tuesday-soup">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="tuesday" name="2-tuesday-dinner">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="tuesday" name="2-tuesday-supper">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-row">Środa</th>
+                        <td>
+                            <select class="wednesday" name="3-wednesday-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="wednesday" name="3-wednesday-second-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="wednesday" name="3-wednesday-soup">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="wednesday" name="3-wednesday-dinner">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="wednesday" name="3-wednesday-supper">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-row">Czwartek</th>
+                        <td>
+                            <select class="thursday" name="4-thursday-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="thursday" name="4-thursday-second-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="thursday" name="4-thursday-soup">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="thursday" name="4-thursday-dinner">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="thursday" name="4-thursday-supper">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-row">Piątek</th>
+                        <td>
+                            <select class="friday" name="5-friday-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="friday"
+                                name="5-friday-second-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="friday" name="5-friday-soup">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="friday" name="5-friday-dinner">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                        </td>
+                        <td>
+                            <select class="friday" name="5-friday-supper">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-row">Sobota</th>
+                        <td>
+                            <select class="saturday" name="6-saturday-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="saturday"
+                                name="6-saturday-second-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="saturday" name="6-saturday-soup">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="saturday" name="6-saturday-dinner">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="saturday" name="6-saturday-supper">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="table-row">Niedziela</th>
+                        <td>
+                            <select class="sunday" name="7-sunday-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="sunday"
+                                name="7-sunday-second-breakfast">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="sunday" name="7-sunday-soup">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="sunday" name="7-sunday-dinner">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="sunday" name="7-sunday-supper">
+                                <option disabled class="choose-option" value="wybierz">wybierz przepis</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section class="edit-plan d-none">
+            <section>
+                <div class="newPlan-title">
+                    <h3>EDYTUJ PLAN</h3>
+                    <button class="edit-button">Zapisz i zamknij</button>
+                    <!-- <a href="app.html" class="newPlan-button">Zapisz i zamknij</a> -->
+                </div>
+                <hr>
+                
+            </section>
+            <section class="newPlan-data edit-data">
+                <div>
+                    <div class="newPLan-data-item newPLan-data-item1">
+                        <h3>Nazwa planu</h3>
+                        <input id="edit-name" name="nazwa planu" type="text" maxlength="50"
+                            placeholder="Max 50 characters">
+                    </div>
+                    <div class="edit-description newPLan-data-item newPLan-data-item2">
+                        <h3>Opis planu</h3>
+                        <textarea id="plan-description" name="opis planu" type="text" rows="4" maxlength="360"
+                            placeholder="Max 360 characters"></textarea>
+                    </div>
+                    <div class="edit-weeks newPLan-data-item newPLan-data-item3">
+                        <h3>Numer tygodnia</h3>
+                        <input id="edit-weeks" name="numer tygodnia" type="number">
+                    </div>
+                </div>
+            </section>
+            <section class="cloneTable"></section>
+        </section>
+    </main>
+</section>
+
+
+
+
+<script type="module" src="./js/schedules.js"></script>
+<script src="./js/schedules_edit.js"></script>
+
+</html>

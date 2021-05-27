@@ -1,0 +1,34 @@
+.about-app-container {
+    background: $color-background;
+    padding: 8rem 0;
+}
+
+.about-app {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-basic;
+}
+
+.about-app-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25%;
+    color: $color-secondary-grey;
+}
+
+.about-app-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about-app-text {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    padding: 0 20px;
+}

@@ -1,0 +1,48 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+@import "generic/reset";
+@import "generic/grid";
+
+@import "settings/fonts";
+@import "settings/colors";
+
+@import "elements/Call_to_Action";
+@import "elements/header";
+@import "elements/carusel";
+@import "./elements/about_app";
+@import "./elements/app_main_screen";
+@import "./elements/app_message_and_form";
+@import "elements/about_author";
+@import "elements/form"; 
+@import "elements/footer";
+@import "elements/newPlan";
+
+@import "elements/planList";
+@import "elements_recipes/style_recipes";
+@import "./elements_desktop/widgets";
+@import "./elements_desktop/shedule_table";
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+html {
+  font-family: $font-basic;
+  font-size: 14px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  // background-color: #BADA55;
+  background-color: $color-background;
+}
+

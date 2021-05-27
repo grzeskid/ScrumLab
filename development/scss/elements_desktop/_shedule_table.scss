@@ -1,0 +1,51 @@
+.shedule-info {
+    width: 100%;
+    background: $color-background;
+    padding: 20px;
+    font-family: $font-basic;
+    color: $color-secondary-grey;
+    border: 2px dashed $color-secondary-grey;
+    margin: 20px 0;
+}
+
+.shedule-table {
+    margin: auto;
+    table-layout: fixed;
+    &-header {
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $color-primary-orange
+    }
+    tr {
+        border-bottom: 1px solid $color-secondary-grey;
+    }
+    td {
+        padding: 20px;
+    }
+    .table-days {
+        color: $color-primary-grey;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+}
+
+.schedule-table-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule-prev,
+.schedule-next {
+    color: $color-primary-orange;
+    margin-top: 30px;
+    border: none;
+    background: $color-background;
+}
+
+.fa-angle-double-left,
+.fa-angle-double-right {
+    margin: 0 5px;
+}

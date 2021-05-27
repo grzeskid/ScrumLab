@@ -1,0 +1,32 @@
+#recipes{
+.name_and_description{
+    width: 100%;
+    height: 30%;
+    margin-top: 3vh;
+    font-size: 1.5vw;
+    font-family: $font-basic;
+}
+.input_description{
+    margin: 2% 7% 2% 2%;
+    label{
+        margin-left: 9% ;
+    }
+    textarea{
+        margin-left: 2%;
+        width: 63%;
+        padding: 0.5%;
+        font-size: 1vw;
+        resize:none
+    }
+}
+
+.input_name{
+    margin: 0 10% 0 10%;
+    input{
+        width: 72%;
+        padding: 0.5% ;
+        font-size: 1vw;
+    }
+
+    }
+}

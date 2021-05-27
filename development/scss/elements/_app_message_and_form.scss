@@ -1,0 +1,57 @@
+.app-message {
+    width: 90%;
+    height: 90%;
+    background: $color-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed $color-secondary-grey;
+    font-family: $font-basic;
+}
+
+.app-message-text {
+    color: $color-secondary-grey;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    max-width: 50%;
+    font-weight: bold;
+    padding: 20px 0;
+    p {
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+}
+
+.app-message-form {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+        margin: 10px 0;
+        width: 300px;
+        padding: 2px;
+    }
+    button {
+        font-size: 2rem;
+        font-weight: bold;
+        background: $color-primary-orange;
+        border: 1px solid $color-primary-orange;
+        color: white;
+        padding: 5px 15px;
+    }
+    button:hover{
+        background-color: white;
+        color: $color-primary-orange;
+        border: 1px solid $color-primary-orange;
+    }
+}
+
+.text2{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    max-width: 100%;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zaplanuj Jedzonko</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="app-header">
+    <h1 class="app-title"><a href="index.html">Zaplanuj <span>Jedzonko</span></a></h1>
+    <div class="app-login">
+    <span class="user-name">Imię</span>
+    <i class="fas fa-user-circle fa-3x"></i>
+    </div>
+  </header>
+
+  <section class="app-main">
+    <nav class="app-nav">
+      <ul class="app-links">
+        <li class="desktop-app"><a href="app.html">Pulpit</a></li>
+        <li><a href="recipes.html">Przepisy</a></li>
+        <li><a href="schedules.html">Plany</a></li>
+      </ul>
+    </nav>
+    <article class="app-main-window">
+      <div class="app-message">
+        <span class="app-message-text text1">Witaj,<p>wygląda na to, że jesteś tutaj pierwszy raz!</p></span>
+        <form class="app-message-form">
+          <input type="text" placeholder="tutaj wpisz jak masz na imię">
+          <button>Gotowe!</button>
+        </form>
+        <p class="app-message-text text2">Podaj nam swoje imię, a my <br>zorganizujemy dla Ciebie naszą aplikację :)</p>
+      </div>
+      <section class="main-desktop">
+        <div class="widgets-container">
+        <article class="desktop-adding-widgets">
+          <div class="widget-recipe adding-widget">
+            <i class="far fa-plus-square fa-4x"></i>
+            <p>dodaj przepis</p>
+          </div>
+          <div class="widget-schedule adding-widget">
+            <i class="far fa-plus-square fa-4x"></i>
+            <p>dodaj plan</p>
+          </div>
+        </article>
+        <article class="desktop-info-widgets">
+          <div class="info-widget info-recipe">
+            <i class="fas fa-info-circle fa-2x"></i>
+            <p>Masz już 99 przepisów, nieźle!</p>
+            <i class="fas fa-times-circle widget-close"></i>
+          </div>
+          <div class="info-widget info-shedule">
+            <i class="fas fa-exclamation-circle fa-2x"></i>
+            <p>Pamiętaj, aby dodać plan!</p>
+            <i class="fas fa-times-circle widget-close"></i>
+          </div>
+          <div class="info-widget info-plan">
+            <i class="fas fa-check-circle fa-2x"></i>
+            <p>Świetnie, że jesteś! Udanego planowania i smacznego! :)</p>
+            <i class="fas fa-times-circle widget-close"></i>
+          </div>
+        </article>
+      </div>
+        <section class="shedule-info">
+          <table class="shedule-table">
+            <thead>
+              <tr>
+                <td colspan="7" class="shedule-table-header">Twój plan na 1 tydzień:</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-days">Poniedziałek</td>
+                <td class="table-days">Wtorek</td>
+                <td class="table-days">Środa</td>
+                <td class="table-days">Czwartek</td>
+                <td class="table-days">Piątek</td>
+                <td class="table-days">Sobota</td>
+                <td class="table-days">Niedziela</td>
+              </tr>
+              <tr>
+                <td class="monday-meal">Śniadanie</td>
+                <td class="tuesday-meal">Śniadanie</td>
+                <td class="wednesday-meal">Śniadanie</td>
+                <td class="thursday-meal">Śniadanie</td>
+                <td class="friday-meal">Śniadanie</td>
+                <td class="saturday-meal">Śniadanie</td>
+                <td class="sunday-meal">Śniadanie</td>
+              </tr>
+              <tr>
+                <td class="monday-meal">Drugie Śniadanie</td>
+                <td class="tuesday-meal">Drugie Śniadanie</td>
+                <td class="wednesday-meal">Drugie Śniadanie</td>
+                <td class="thursday-meal">Drugie Śniadanie</td>
+                <td class="friday-meal">Drugie Śniadanie</td>
+                <td class="saturday-meal">Drugie Śniadanie</td>
+                <td class="sunday-meal">Drugie Śniadanie</td>
+              </tr>
+              <tr>
+                <td class="monday-meal">Zupa</td>
+                <td class="tuesday-meal">Zupa</td>
+                <td class="wednesday-meal">Zupa</td>
+                <td class="thursday-meal">Zupa</td>
+                <td class="friday-meal">Zupa</td>
+                <td class="saturday-meal">Zupa</td>
+                <td class="sunday-meal">Zupa</td>
+              </tr>
+              <tr>
+                <td class="monday-meal">Drugie danie</td>
+                <td class="tuesday-meal">Drugie danie</td>
+                <td class="wednesday-meal">Drugie danie</td>
+                <td class="thursday-meal">Drugie danie</td>
+                <td class="friday-meal">Drugie danie</td>
+                <td class="saturday-meal">Drugie danie</td>
+                <td class="sunday-meal">Drugie danie</td>
+              </tr>
+              <tr>
+                <td class="monday-meal">Kolacja</td>
+                <td class="tuesday-meal">Kolacja</td>
+                <td class="wednesday-meal">Kolacja</td>
+                <td class="thursday-meal">Kolacja</td>
+                <td class="friday-meal">Kolacja</td>
+                <td class="saturday-meal">Kolacja</td>
+                <td class="sunday-meal">Kolacja</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="schedule-table-buttons">
+            <button class="schedule-prev"><i class="fas fa-angle-double-left"></i>poprzedni</button>
+            <button class="schedule-next">następny<i class="fas fa-angle-double-right"></i></button>
+          </div>
+        </section>
+      </section>
+      
+    </article>
+    
+  </section>
+  <script src="js/app_message.js"></script>
+  <script type="module" src="./js/app.js" ></script>
+  <script type="module" src="js/desktop.js"></script>
+</body>
+  
+</html>

@@ -1,0 +1,96 @@
+.app-header {
+    height: 100px;
+    background: $color-primary-grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+.app-title {
+    color:white;
+    font-family: $font-logo;
+    font-size: 3rem;
+    padding: 0 40px;
+    span{
+        color:$color-primary-orange;
+    }
+}
+.app-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.fa-user-circle {
+    display: block;
+    color: $color-primary-orange;
+    padding: 0 20px;
+}
+
+.user-name {
+    color: white;
+    font-family: $font-basic;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.app-main {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+.app-nav {
+    width: 20%;
+    background: $color-side-nav;
+    
+}
+
+.app-links{
+    a {
+    display: flex;
+    align-items: flex-start;
+    // flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-family: $font-basic;
+    color: white;
+    font-size: 1.75rem;
+    }
+    li {
+        border-left: 1rem solid transparent;
+        position: relative;
+    }
+    li:hover {
+        border-left: 1rem solid $color-primary-orange;
+        margin: 0;
+        ::after{
+            content: "\25B6";
+            position: absolute;
+            right:15px;
+            color: $color-primary-orange;
+            font-weight: bold;
+        }
+    }
+}
+
+.app-main-window {
+    background: url("/assets/background.png") repeat;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app-links .desktop-app{
+    border-left: 1rem solid $color-primary-orange
+}
+

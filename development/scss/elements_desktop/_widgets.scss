@@ -1,0 +1,75 @@
+.main-desktop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90%;
+}
+
+.widgets-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.desktop-adding-widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.adding-widget {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: $color-background;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed $color-success;
+    color: $color-success;
+    font-family: $font-basic;
+    font-size: 2rem;
+}
+
+.desktop-info-widgets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.info-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    border: 2px dashed;
+    background: $color-background;
+}
+
+.info{
+    &-recipe{
+        border-color: $color-info;
+        color: $color-info;
+    }
+    &-shedule{
+        border-color: $color-warning;
+        color: $color-warning;
+    }
+    &-plan{
+        border-color: $color-success;
+        color: $color-success;
+    }
+}
+
+.widget-close{
+    align-self: flex-start;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+
+@import "recipes_title";
+@import "recipes_name_and_description";
+@import "recipes_addition";
+@import "recipes_display";
+@import "new_recipes_header";
+@import "nev_recipes_description";
+@import "nev_recipes_list_view";
+#recipes{
+    background-color: $color-background;
+    height: 93%;
+    margin: 2%;
+    border: dashed 2px $color-secondary-grey;
+    width: 100%;
+
+}
+#recipe_list{
+    background-color:$color-background;
+    width: 90%;
+    height: 90%;
+    margin: 4% 5% 4% 5%;
+    border: dashed 2px $color-secondary-grey;
+    
+}
+.app-links {
+#li-after {
+    ::after {
+        content: "\25B6";
+        position: absolute;
+        right: 15px;
+        color: #FF6600;
+        font-weight: bold;
+        opacity: 0;
+    }
+
+}
+#second-li{
+    border-left: 1rem solid #FF6600;
+    margin: 0;
+    // ::after {
+    //     content: "\25B6";
+    //     position: absolute;
+    //     right: 15px;
+    //     color: #FF6600;
+    //     font-weight: bold;
+        
+    // }
+}
+
+}

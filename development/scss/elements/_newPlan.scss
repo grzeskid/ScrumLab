@@ -1,0 +1,233 @@
+@use "sass-color";
+
+.d-none{
+    display: none;
+}
+
+.add-new-plan{
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: $color-primary-orange;
+    border: none;
+}
+
+.newPlan,
+.edit-plan {
+    background-color: $color-background;
+    margin: 3rem auto;
+    padding: 2rem;
+    width: 80%;
+    height: 600px;
+    border: 2px dashed $color-secondary-grey;
+
+    hr {
+        border-color: $color-secondary-grey;
+        margin-bottom: 1rem;
+    }
+}
+
+.newPlan-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $color-primary-orange;
+    }
+
+    .newPlan-button,
+    .edit-button {
+        background-color: $color-primary-orange;
+        padding: 5px 10px;
+        border: none;
+        color: $color-background;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+}
+
+.newPlan-data {
+
+    .newPLan-data-item {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-start;
+
+        h3 {
+            font-size: 1.5rem;
+            color: $color-primary-grey;
+            width: 20%;
+        }
+
+        input,
+        textarea {
+            font-family: $font-basic;
+            // max-height: 90px;
+            resize: none;
+            width: 75%;
+            border-radius: 0;
+            padding: 5px;
+            border: 2px solid lighten($color-secondary-grey, 20);
+        }
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .newPLan-data-item3 {
+        input {
+            width: 32px;
+        }
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: lighten($color-secondary-grey, 20);
+        padding:3px;
+        font-size: 0.9rem;
+    }
+}
+
+.newPlan-table {
+    table {
+        width: 96%;
+
+        th,
+        tr,
+        td {
+            // border:1px solid red;
+            padding: 0;
+        }
+
+        th {
+            width: 16%;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 2rem;
+            color: $color-primary-grey;
+            vertical-align: middle;
+            border-top: 2px solid lighten($color-secondary-grey, 20);
+        }
+
+        .table-column:first-child {
+            border: none;
+        }
+
+        tr {
+            height: 35px;
+            vertical-align: middle;
+            border-bottom: 2px solid lighten($color-secondary-grey, 20);
+        }
+
+        td {
+
+            // display:flex;
+            select {
+                width: 90%;
+                height: 25px;
+                margin-top: 4px;
+                margin-left: 7px;
+                padding-left: 5px;
+                border: 1px solid lighten($color-secondary-grey, 20);
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.table-column {
+    font-size: 1.5rem;
+}
+
+.table-row {
+    font-size: 1.2rem;
+}
+
+select option:first-child{
+    color:$color-secondary-grey
+}
+
+.app-links .schedules-new-plan-form{
+    border-left: 1rem solid $color-primary-orange;
+    // ::after{
+    //     content: "\25B6";
+    //     position: absolute;
+    //     right:15px;
+    //     color: $color-primary-orange;
+    //     font-weight: bold;
+    // }
+}
+
+.succes-widget,
+.succes-widget-edit {
+    position:relative;
+    border-color: $color-success;
+    color: $color-success;
+    position:absolute;
+    top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 400px;
+    margin: 10px;
+    padding: 25px;
+    border: 2px dashed;
+    background: $color-background;
+    p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+.remove-widget {
+    border-color: $color-warning;
+    color: $color-warning;
+    position:absolute;
+    top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    padding: 25px;
+    border: 2px dashed;
+    background: $color-background;
+    p {
+        font-size: 1.5rem;
+    }
+    .removeIcons{
+        width:30%;
+        display: flex;
+        justify-content: space-around;
+        .remove-widget-yes{
+            color: lighten($color-secondary-grey, 25);
+            cursor: pointer;
+        }
+        .remove-widget-no{
+            color: lighten($color-secondary-grey, 25);
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.edit-widget-close,
+.success-widget-close {
+    color: lighten($color-secondary-grey, 25);
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

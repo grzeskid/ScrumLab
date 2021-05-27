@@ -1,0 +1,32 @@
+$columns: 12;
+$column-width: 100% / $columns;
+
+// col-X
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        width: $column-width * $i;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    //min-height: 100vh;
+    //border: 1px solid red;
+    padding: 5px;
+}

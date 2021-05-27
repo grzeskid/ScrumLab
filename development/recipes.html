@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zaplanuj Jedzonko</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="app-header">
+    <h1 class="app-title"><a href="index.html">Zaplanuj <span>Jedzonko</span></a></h1>
+    <div class="app-login">
+    <span class="user-name">Imię</span>
+    <i class="fas fa-user-circle fa-3x"></i>
+    </div>
+  </header>
+
+  <section class="app-main">
+    <nav class="app-nav">
+      <ul class="app-links">
+
+        <li id="li-after"><a href="app.html">Pulpit</a></li>
+        <li id="second-li"><a href="recipes.html">Przepisy</a></li>
+        <li id="li-after"><a href="schedules.html">Plany</a></li>
+
+      </ul>
+    </nav>
+    <article class="app-main-window">
+      <div id="recipe_list">
+        <header>
+          <h1>LISTA PRZEPISÓW</h1>
+          <a href="new_recipes.html"><button>+</button></a>
+        </header>
+
+        <section class="description">
+          <div class="row">  
+            <div class="col-1">ID</div>
+            <div class="col-3">NAZWA</div>
+            <div class="col-6">OPIS</div>
+            <div class="col-2">AKCJA</div>
+          </div>
+        </section>
+        <section class="list_view">
+          <div class="list">
+            
+          </div>
+        </section>
+
+      </div> 
+    </article>
+  </section>
+  <script type="module" src="./js/nev_recipes.js"></script>
+</body>
+</html>
+
+

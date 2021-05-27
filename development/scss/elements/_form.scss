@@ -1,0 +1,41 @@
+.form{
+    height: 150px;
+    background-color:$color-side-nav ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .form_container_text{
+        margin-left: 5%;
+        h1{
+            color: white;
+            font-size: 48px;
+            font-family: $font-basic;
+        }
+    }
+    .form_container_input{
+        display: flex;
+        justify-content: center;
+        margin-right: 4%;
+        button{
+            background-color: $color-primary-orange;
+            border:0;
+            box-shadow: none;
+            padding:0px 30px 0px 30px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: $font-basic;
+                font-size: 20px;
+
+            }
+        }
+        input{
+            height: 48px;
+            width: 348px;
+            font-size: 24px;
+            box-shadow: none;
+            border:0;
+            padding: 2px;
+        }
+    }
+}

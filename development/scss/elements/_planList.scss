@@ -1,0 +1,126 @@
+.d-none{
+    display: none;
+}
+
+.plan-list-button{
+    padding: 0 8px;
+    background-color: darkgreen;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.plan-list {
+    background-color: $color-background;
+    margin: 3rem auto;
+    padding: 2rem;
+    width: 90%;
+    height: 85%;
+    border: 2px dashed $color-secondary-grey;
+
+    hr {
+        border-color: $color-secondary-grey;
+        margin-bottom: 1rem;
+    }
+}
+.div-plan-table{
+    height: 87%;
+    overflow: auto;
+}
+.plan-list {
+    table {
+        width: 100%;
+        th,
+        tr,
+        td {
+            // border:1px solid red;
+            padding: 0;
+            padding-left: 5px;
+        }
+
+        th {
+            width: 10%;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 2rem;
+            color: $color-primary-grey;
+            vertical-align: middle;
+            text-align: left;
+        }
+        td {
+            width: 10%;
+            height: 30px;
+            padding: 5px;
+            color: $color-secondary-grey;
+            line-height: 1.2rem;
+            border-top: 2px solid lighten($color-secondary-grey, 20);
+        }
+        th:nth-child(1),
+        td:nth-child(1)
+        {
+            width: 5%;
+        }
+        th:nth-child(2),
+        td:nth-child(2){
+            width: 20%;
+        }
+        th:nth-child(3),
+        td:nth-child(3){
+            width: 50%;
+        }
+        th:nth-child(4),
+        td:nth-child(4),
+        th:last-child,
+        td:last-child{
+            text-align: center;
+        }
+        .plan-table{
+            td{
+                padding-left: 5px;
+            }
+
+        }
+    }
+}
+
+.table-column {
+    font-size: 1.5rem;
+}
+
+.table-row {
+    font-size: 1.2rem;
+}
+
+.iconEdit-plan {
+    cursor: pointer;
+    color: $color-warning;
+    font-size: 1.5rem;
+}
+
+.iconTrash-plan {
+    cursor: pointer;
+    color: $trash-icon-color;
+    margin-left: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    padding-left:3px;
+    // margin-right: -20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px $color-warning;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lighten($color-secondary-grey, 25);
+    border-radius: 10px;
+  }
