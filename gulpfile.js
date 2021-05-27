@@ -5,7 +5,7 @@ var autoprefixer = require("gulp-autoprefixer");
 var browserSync = require("browser-sync").create();
 
 gulp.task("watch", function(cb) {
-  gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
+  gulp.watch("./scss/**/*.scss", gulp.series("sass"));
   cb();
 });
 
@@ -13,15 +13,13 @@ gulp.task("watch", function(cb) {
 gulp.task("serve", function(cb) {
   browserSync.init({
     server: {
-      baseDir: "./development",
-
       index: "app.html"
   }
   });
 
-  gulp.watch("development/scss/**/*.scss", gulp.series("sass"));
-  gulp.watch("development/*.html").on("change", browserSync.reload);
-  gulp.watch("development/js/*.js").on("change", browserSync.reload);
+  gulp.watch("./scss/**/*.scss", gulp.series("sass"));
+  gulp.watch("./*.html").on("change", browserSync.reload);
+  gulp.watch("./js/*.js").on("change", browserSync.reload);
   cb();
 });
 
@@ -29,7 +27,7 @@ gulp.task("serve", function(cb) {
 gulp.task("sass", function() {
   console.log("jestem")
   return gulp
-    .src("development/scss/**/*.scss")
+    .src("./scss/**/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(sourcemaps.init())
     .pipe(
@@ -38,7 +36,7 @@ gulp.task("sass", function() {
       })
     )
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest("development/css"))
+    .pipe(gulp.dest("./css"))
     .pipe(browserSync.stream());
 });
 
